@@ -1,0 +1,141 @@
+<!DOCTYPE html>    
+<html>    
+<head>  
+<body style="background-color: #131212;">  
+  <nav class="navbar background1">
+    <ul class = "nav-list", style="text-align: center;">
+      <h2 style="color:antiquewhite">FEEDBACK FORM</h2>
+       
+    </ul>
+  </nav>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>    
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: rgb(212, 209, 209);    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #93a9ff;    
+  padding: 20px; 
+  font-weight: bold;   
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+
+.body{
+  font-weight: bold;
+}
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head>    
+<body>    
+    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+          
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <p><b>How Satisfied are you with the service you received?</b></p>
+
+
+      <input type="radio" id="Very Good" name="fav_language" value="Very Good">
+      <label for="Very Good">Very Good</label><br>
+      <input type="radio" id="Good" name="fav_language" value="Good">
+      <label for="Good">Good</label><br>
+      <input type="radio" id="Satisfactory" name="fav_language" value="Satisfactory">
+      <label for="Satisfactory">Satisfactory</label><br>
+      <input type="radio" id="Need Improvements" name="fav_language" value="Need Improvements">
+      <label for="Need Improvements">Need Improvements</label><br><br>
+      
+      <div class="row">    
+        <input type="submit" value="Submit">    
+      </div>     
+  </form>    
+</div> 
+
+</body>  
+</body>    
+</html>    
